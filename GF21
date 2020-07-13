@@ -1,0 +1,55 @@
+# GF21
+The GF21 is a small lightweight GPS Tracker that works over cellular to be tracked from anywhere.
+
+**Base URL**: `http://120.76.241.191/n365_ilist.php`
+
+**Parameters**:
+
+| Parameters | Value                    | Mandatory |
+| ---------- | ------------------------ | :-------: |
+| app        | n365                     |           |
+| hw         | ios                      |           |
+| imei       | <tracker-imei>           | X         |
+| pw         | <tracker-password>       | X         |
+| ver        | 1.36                     |           |
+
+**Headers**:
+
+| Header          | Value                                      | Mandatory |
+| --------------- | -------------------------------------------| :-------: |
+| User-Agent      | GPS365/1.36 (iPhone; iOS 12.2; Scale/2.00) |           |
+| Accept-Language | en-NZ;q=1                                  |           |
+| Connection      | keep-alive                                 |           |
+| Host            | 120.76.241.191                             |           |
+| Accept          | */*                                        | X         |
+
+The Response should yield something like this:
+
+`[
+    {
+        "login": "<tracker-name>",
+        "imei": "<tracker-imei>",
+        "name": "303_302",
+        "carno": "3",
+        "gps": "2020-07-13 3:07:34,0,2,0,0,<latitude>,<longtitude>,0",
+        "log": "IN 2020-07-13 3:08:48",
+        "google": "<latitude>,<longtitude>",
+        "baidu": "<latitude>,<longtitude>",
+        "speed": null,
+        "bat": "68",
+        "icon": "2",
+        "marker": "2",
+        "device": "303",
+        "ver": "77;0000;0",
+        "sec": "120",
+        "level": "40",
+        "expdate": null,
+        "loc": "FF",
+        "onoff": "3",
+        "gexpdate": null,
+        "iccid": "<tracker-iccid>",
+        "ggkey": null,
+        "startdate": "2020-01-13"
+    }
+]
+`
