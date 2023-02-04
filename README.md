@@ -50,16 +50,16 @@ The Response should yield something like this:
 
 **Other Endpoints**
 
-**Method**: `GET` or `POST`
+**Method**: `GET` or `POST` (it doesn't matter)
 
-Turn LED's Off: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**req=44**`
+Turn LED's Off: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&req=44`
     
-Turn LED's On: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**req=45**`
+Turn LED's On: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&req=45`
     
-Remote Reboot: `gps365.com/n365_ilist.phpgps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**req=48**`
+Remote Reboot: `gps365.com/n365_ilist.phpgps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&req=48`
     
-Remote Shutdown: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**req=49**`
+Remote Shutdown: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&req=49`
     
-Change GPS Update Time: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**login=tracker-imei&sec=120**`
+Change GPS Update Time: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&login=tracker-imei&sec=120`
 
-Request New GPS Location?: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&**t=1**` - Not entirely sure if this works as I haven't seen a GPS Update when command is sent
+Request New GPS Location?: `gps365.com/n365_ilist.php?hw=iOS&imei=TRACKER-IMEI&t=1` - Not entirely sure if this works as I haven't seen a GPS Update when command is sent
